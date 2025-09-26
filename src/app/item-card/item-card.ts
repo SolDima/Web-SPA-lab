@@ -7,5 +7,6 @@ import { NgOptimizedImage } from '@angular/common';
   imports: [NgOptimizedImage],
   templateUrl: './item-card.html',
 })
-export class ItemCardComponent {
+export class ItemCard {
+  @Input() card_of_item!: item;
 }

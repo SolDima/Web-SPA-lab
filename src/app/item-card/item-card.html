@@ -1,5 +1,4 @@
 <div class="item-card">
-  <!-- Картинка товару -->
   <img
     [ngSrc]="card_of_item.image"
     [alt]="card_of_item.name"
@@ -7,13 +6,10 @@
     height="200"
     class="item-image">
 
-  <!-- Назва товару -->
   <h3 class="item-name">{{ card_of_item.name }}</h3>
 
-  <!-- Опис товару -->
   <p class="item-description">{{ card_of_item.description }}</p>
 
-  <!-- Ціна товару -->
   <div class="item-price">
     Ціна: {{ card_of_item.awgPrice }} грн
   </div>
