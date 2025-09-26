@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { ItemsCard } from '../items-card/items-card';
-import { ItemsList } from '../items-list/items-list';
+import { ItemsCardComponent } from '../items-card/items-card';
+import { ItemsListComponent } from '../items-list/items-list';
 
 @Component({
   selector: 'app-layout',
-  imports: [ItemsCard, ItemsList],
+  imports: [ItemsCardComponent, ItemsListComponent],
   templateUrl: './layout.html',
   styleUrl: './layout.css'
 })
