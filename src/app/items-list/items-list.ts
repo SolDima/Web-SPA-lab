@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { ItemsCard } from '../items-card/items-card';
 import { Item } from '../shared/models/item.model';
+import { items } from '../data/items/items';
 
 @Component({
   selector: 'app-items-list',
-  imports: [ItemsCard],
-  templateUrl: './items-list.html',
-  styleUrl: './items-list.css'
+  templateUrl: './items-list.html'
 })
-export class ItemsList {
-
+export class ItemsListComponent {
+  items: Item[] = items;
 }

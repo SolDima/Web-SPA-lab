@@ -4,6 +4,6 @@ export interface Item {
   id: number;
   name: string;
   description: string;
-  imgUrl: string;
+  image: string;
   awgPrice: number;
 }

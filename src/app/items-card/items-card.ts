@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { Item} from '../shared/models/item.model';
 
 @Component({
   selector: 'app-items-card',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './items-card.html',
   styleUrl: './items-card.css'
 })
-export class ItemsCard {
 
+export class ItemsCardComponent {
+  @Input() item!: Item; // Вхідний параметр для одного об'єкта Item
 }

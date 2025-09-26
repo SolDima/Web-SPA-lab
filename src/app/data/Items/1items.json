@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Гантеля путіна",
+    "image": "data/pictures/Gantelya_potujna.png",
+    "description": "string",
+    "awgPrice": "100"
+  },
+  {
+    "id": 2,
+    "name": "Бігова доріжка",
+    "image": "data/pictures/treadmill.jpg",
+    "description": "string",
+    "awgPrice": "100"
+  },
+  {
+    "id": 3,
+    "name": "Гантелі регульовані",
+    "image": "data/pictures/adjustable_dumbbells.jpg",
+    "description": "string",
+    "awgPrice": "100"
+  }
+]
