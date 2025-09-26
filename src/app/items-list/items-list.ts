@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { Item } from '../shared/models/item.model';
-import { items } from '../data/items/items';
-import { ItemsCardComponent } from '../items-card/items-card';
+import { item } from '../shared/models/item.model';
+import { itemsDb } from '../data/items/items-db';
+import { ItemCardComponent } from '../item-card/item-card';
+import {NgForOf} from '@angular/common';
 
 @Component({
-  selector: 'app-items-list',
+  selector: 'app-itemsDb-list',
   templateUrl: './items-list.html',
-  imports: [ItemsCardComponent],
+  imports: [ItemCardComponent, NgForOf],
 })
+
+
 export class ItemsListComponent {
-  items: Item[] = items;
+  itemsDb: item[] = itemsDb;
+
 }

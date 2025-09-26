@@ -1,9 +1,9 @@
-import { Item } from '../../shared/models/item.model';
+import { item } from '../../shared/models/item.model';
 
-export const items: Item[] = [
+export const itemsDb: item[] = [
   {
     id: 1,
-    name: "Гантеля 2кг",
+    name: "Гантеля Арнольда",
     image: "data/pictures/Gantelya_potujna.png",
     description: "123",
     awgPrice: 100
