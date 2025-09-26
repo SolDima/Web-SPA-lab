@@ -1,7 +1,20 @@
-<div class="card">
-  <img ngSrc="item.image" [alt]="item.name" class="card-image" />
-  <h3>{{ item.name }}</h3>
-  <p>ID: {{ item.id }}</p>
-  <p>ID: {{ item.description }}</p>
-  <p>ID: {{ item.awgPrice }}</p>
+<div class="item-card">
+  <!-- Картинка товару -->
+  <img
+    [ngSrc]="card_of_item.image"
+    [alt]="card_of_item.name"
+    width="200"
+    height="200"
+    class="item-image">
+
+  <!-- Назва товару -->
+  <h3 class="item-name">{{ card_of_item.name }}</h3>
+
+  <!-- Опис товару -->
+  <p class="item-description">{{ card_of_item.description }}</p>
+
+  <!-- Ціна товару -->
+  <div class="item-price">
+    Ціна: {{ card_of_item.awgPrice }} грн
+  </div>
 </div>
