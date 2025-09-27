@@ -1,4 +1,4 @@
-/*
+
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Layout } from './layout/layout';
@@ -13,7 +13,8 @@ import { Layout } from './layout/layout';
 export class App {
   protected readonly title = 'Angular';
 }
-*/
+
+/*
 
 //deepseek
 import { Component } from '@angular/core';
@@ -27,3 +28,4 @@ import { ItemsList } from './items-list/items-list';
 export class App {
   title = 'Мій магазин';
 }
+*/
