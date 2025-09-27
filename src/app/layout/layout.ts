@@ -9,5 +9,5 @@ import { ItemsList } from '../items-list/items-list';
   //styleUrl: './layout.css'
 })
 export class Layout {
-  appTitle: string = 'Мій спортивний вебдодаток';
+  appTitle: string = 'Мій спортивний вебкаталог';
 }

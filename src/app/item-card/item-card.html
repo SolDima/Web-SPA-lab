@@ -1,4 +1,4 @@
-<div class="item-card">
+<div class="item-card" style="border: 2px solid #ccc; border-radius: 8px; padding: 16px;">
   <img
     [ngSrc]="card_of_item.image"
     [alt]="card_of_item.name"
@@ -7,10 +7,6 @@
     class="item-image">
 
   <h3 class="item-name">{{ card_of_item.name }}</h3>
-
   <p class="item-description">{{ card_of_item.description }}</p>
-
-  <div class="item-price">
-    Ціна: {{ card_of_item.awgPrice }} грн
-  </div>
+  <div class="item-price">Ціна: {{ card_of_item.awgPrice }} грн</div>
 </div>

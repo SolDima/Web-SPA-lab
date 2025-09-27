@@ -13,19 +13,3 @@ import { Layout } from './layout/layout';
 export class App {
   protected readonly title = 'Angular';
 }
-
-/*
-
-//deepseek
-import { Component } from '@angular/core';
-import { ItemsList } from './items-list/items-list';
-
-@Component({
-  selector: 'app-root',
-  imports: [ItemsList],
-  templateUrl: './app.html',
-})
-export class App {
-  title = 'Мій магазин';
-}
-*/
