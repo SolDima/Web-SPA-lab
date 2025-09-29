@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { item } from '../shared/models/item.model';
-import {NgOptimizedImage, NgIf, NgClass} from '@angular/common';
+import { NgOptimizedImage, NgIf, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-item-card',
@@ -10,5 +10,12 @@ import {NgOptimizedImage, NgIf, NgClass} from '@angular/common';
 })
 export class ItemCard {
   @Input() card_of_item!: item;
-  showDetails :boolean = false;
+
+  @Output() selectItem = new EventEmitter<item>();
+
+  showDetails: boolean = false;
+
+  onSelectItem() {
+    this.selectItem.emit(this.card_of_item);
+  }
 }

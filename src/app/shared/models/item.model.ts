@@ -3,7 +3,9 @@
 export interface item {
   id: number;
   name: string;
-  description: string;
+  shortDescription: string;
   image: string;
   awgPrice: number;
+  fullDescription: string;
+  specs: string;
 }
