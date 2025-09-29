@@ -1,4 +1,8 @@
-<div class="item-card" style="border: 2px solid #ccc; border-radius: 8px; padding: 16px;">
+<div class="item-card"
+     [ngClass]="{ 'hovered': showDetails, 'highlighted': showDetails }"
+     (mouseenter)="showDetails = true"
+     (mouseleave)="showDetails = false">
+
   <img
     [ngSrc]="card_of_item.image"
     [alt]="card_of_item.name"
@@ -9,4 +13,9 @@
   <h3 class="item-name">{{ card_of_item.name }}</h3>
   <p class="item-description">{{ card_of_item.description }}</p>
   <div class="item-price">Ціна: {{ card_of_item.awgPrice }} грн</div>
+
+  <button *ngIf="showDetails"
+          style="position: absolute; bottom: 8px; right: 8px; padding: 6px 12px; border-radius: 6px; border: none; background-color: #007bff; color: white; cursor: pointer;">
+    Детальніше
+  </button>
 </div>
