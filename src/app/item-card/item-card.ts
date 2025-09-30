@@ -10,10 +10,9 @@ import { NgOptimizedImage, NgIf, NgClass } from '@angular/common';
 })
 export class ItemCard {
   @Input() card_of_item!: item;
+  showDetails: boolean = false;
 
   @Output() selectItem = new EventEmitter<item>();
-
-  showDetails: boolean = false;
 
   onSelectItem() {
     this.selectItem.emit(this.card_of_item);
